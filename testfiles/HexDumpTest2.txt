@@ -1,1 +1,3 @@
-HexDump Test file 1: This has 38 bytes
+HexDump demo file: This has 111 bytes.
+Most are printable ASCII.
+The quick brown fox jumps over the lazy dog.

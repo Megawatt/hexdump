@@ -1,7 +1,7 @@
 /*
 ******************************************************************************
 hexdump
-(c) 2024 Palatsi
+(c) 2024 Megawatt
 
 Simple hexdump utility. 
 Limits input length to 4 GB.

@@ -1,0 +1,45 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'hexdump'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=hexdump",
+                    "--package=hexdump"
+                ],
+                "filter": {
+                    "name": "hexdump",
+                    "kind": "bin"
+                }
+            },
+            "args": ["${workspaceFolder}\\testfiles\\HexDumpTest2.txt"],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'hexdump'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=hexdump",
+                    "--package=hexdump"
+                ],
+                "filter": {
+                    "name": "hexdump",
+                    "kind": "bin"
+                }
+            },
+            "args": ["${workspaceFolder}\\testfiles\\HexDumpTest2.txt"],
+            "cwd": "${workspaceFolder}"
+        }
+    ]
+}
